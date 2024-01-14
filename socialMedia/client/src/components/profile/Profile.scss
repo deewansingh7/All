@@ -1,0 +1,127 @@
+.Profile {
+    margin-top: 60px;
+    .container {
+        display: flex;
+        gap: 20px;
+    }
+    .left-part {
+        flex: 2;
+        overflow-y: auto;
+    }
+    .right-part {
+        flex: 1;
+        margin-top: 20px;
+    }
+
+    .profile-card {
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        text-align: center;
+        padding: 40px;
+
+        .user-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .user-name,
+        .follower-info {
+            margin-top: 12px;
+        }
+
+        .bio {
+            margin-top: 6px;
+        }
+
+        .follower-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .follow, .update-profile {
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .follow-link {
+            color: var(--accent-color);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Profile {
+        margin-top: 60px 30px;
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+    
+        .profile-card {
+            
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            position: relative;
+            z-index: -1;
+    
+            .user-img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+    
+            .user-name{
+                position: absolute;
+                top: -5px;
+                left: 35%;
+            }
+
+            .follower-info {
+                position: absolute;
+                top: 2.5rem;
+                left: 35%;
+            }
+    
+            .bio {
+                position: absolute;
+                top: 1.5rem;
+                left: 35%;
+            }
+    
+    
+            .follow, .update-profile {
+                margin-top: 20px;
+                display: inline-block;
+            }
+            #mobile-view{
+                position: absolute;
+                bottom: 0.5rem;
+                left: 35%;
+               display: block;
+               padding: 0.5rem;
+               height: 2rem;
+            }
+            #mobile-view{
+                position: absolute;
+                bottom: 0.5rem;
+                left: 35%;
+               display: block;
+               padding: 0.5rem;
+               height: 2rem;
+            }
+            #mobile-view1{
+                position: absolute;
+                bottom: 0.5rem;
+                left: 35%;
+                padding: 0.3rem 1rem;
+               height: 2rem;
+            }
+        }
+    }
+  }

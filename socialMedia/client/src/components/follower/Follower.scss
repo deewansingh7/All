@@ -1,0 +1,33 @@
+.Follower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+    }
+  
+    .follow-link {
+      color: var(--accent-color);
+    }
+  
+    /* For Android phones */
+//     @media only screen and (max-width: 576px) {
+      
+//       .user-info {
+//         flex-direction: column;
+//         align-items: flex-start;
+//       }
+  
+//     //   #mobile-view{
+//     //     display: none;
+//     //   }
+//     }
+//   }
+  
+}
+
