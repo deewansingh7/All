@@ -1,0 +1,24 @@
+nav {
+    background-color: darkcyan;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 2px gainsboro;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.banner {
+    color: white;
+}
+
+.cart-layout {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    font-size: 3rem;
+    align-items: center;
+}
